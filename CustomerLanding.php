@@ -63,6 +63,39 @@ if (isset($_SESSION['loggedin'])) {
                     </a>
                 </div>
             </div>
+
+            <br>
+
+            <div class="row">
+                
+                <!--For the Card Tiles-->
+                <div class="col-sm-6">
+                    <a href="./CustomerPendingRepairs.php" style="text-decoration: none;">
+                        <div class="card">
+                            <div class="card-body">
+                                <center><img src="#" alt="Image of Finished Repair"></center>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title text-primary"><center>View pending Repairs</center></h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+
+            <div class="col-sm-6">
+                    <a href="./CustomerFinishedRepairs.php" style="text-decoration: none;">
+                        <div class="card">
+                            <div class="card-body">
+                                <center><img src="#" alt="Image of Vehicle"></center>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title text-primary"><center>View Finished Repairs</center></h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
             
         </div>
     

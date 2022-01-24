@@ -38,7 +38,7 @@ if (isset($_SESSION['loggedin'])) {
                                             <th scope="col">Car Registration</th>
                                             <th scope="col">Repair Type</th>
                                             <th scope="col">Description</th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Payment Status</th>
                                             <th scope="col"></th>
                                         </tr>
                                     </thead>

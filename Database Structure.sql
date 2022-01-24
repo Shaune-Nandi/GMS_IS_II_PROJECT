@@ -66,7 +66,7 @@ CREATE TABLE CustRepairDetails (
 	CustJobTakenWhen VARCHAR(255),
 	TakenByUserID INT(11),
 	CustJobDone VARCHAR(255),
-	CustJobRepairedWhen VARCHAR(255)
+	CustJobRepairedWhen VARCHAR(255),
 	PaymentStatus VARCHAR(255) NOT NULL,
 	PaidWhen VARCHAR(255),
 	SpareID INT(11)
@@ -205,13 +205,13 @@ VALUES (NULL, '6', 'KCX467F', 'Puncture', 'Slow puncture', 'ThsyY8', '10:57:31pm
 
 
 INSERT INTO `custrepairdetails` (`CustRepairID`, `RepairCust`, `Registration`, `CustJobType`, `CustRepairDesc`, `CustToken`, `CustDate`, `CustJobTaken`, `CustJobTakenWhen`, `TakenByUserID`, `CustJobDone`, `CustJobRepairedWhen`, `PaymentStatus`, `PaidWhen`)
-VALUES (NULL, '7', 'KCL957V', 'Puncture', 'Ran over some spikes while escaping alco-blow', 'rSdtK7', '12:38:31pm 05-12-21', 'NO', NULL, NULL, 'NO', NULL 'NO', NULL);
+VALUES (NULL, '7', 'KCL957V', 'Puncture', 'Ran over some spikes while escaping alcoblow', 'rSdtK7', '12:38:31pm 05-12-21', 'NO', NULL, NULL, 'NO', NULL, 'NO', NULL);
 
 INSERT INTO `custrepairdetails` (`CustRepairID`, `RepairCust`, `Registration`, `CustJobType`, `CustRepairDesc`, `CustToken`, `CustDate`, `CustJobTaken`, `CustJobTakenWhen`, `TakenByUserID`, `CustJobDone`, `CustJobRepairedWhen`, `PaymentStatus`, `PaidWhen`)
 VALUES (NULL, '7', 'KBG544V', 'Brake Repair', 'Brake disks are worn out', 'OSGtK7', '12:48:31pm 06-12-21', 'NO', NULL, NULL, 'NO', NULL, 'NO', NULL);
 
 INSERT INTO `custrepairdetails` (`CustRepairID`, `RepairCust`, `Registration`, `CustJobType`, `CustRepairDesc`, `CustToken`, `CustDate`, `CustJobTaken`, `CustJobTakenWhen`, `TakenByUserID`, `CustJobDone`, `CustJobRepairedWhen`, `PaymentStatus`, `PaidWhen`)
-VALUES (NULL, '7', 'KDB478K', 'Oil Change', 'Mileage is over 100,000 Km. The car needs servicing since it is overdue', 'dUjkw7', '11:27:31am 08-12-21', 'NO', NULL, NULL, 'NO', NULL 'NO', NULL);
+VALUES (NULL, '7', 'KDB478K', 'Oil Change', 'Mileage is over 100,000 Km. The car needs servicing since it is overdue', 'dUjkw7', '11:27:31am 08-12-21', 'NO', NULL, NULL, 'NO', NULL, 'NO', NULL);
 
 
 

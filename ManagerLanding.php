@@ -20,44 +20,72 @@ if (isset($_SESSION['loggedin'])) {
     <body>
         <?php include 'NavigationBar.php';?><br>
         <div class="container">
-            <div class="row">
                 
                 <!--For the Card Tiles-->
                 <div class="row">
-                    <div class="col-sm-4">
-                        <a href="#">
+                    <div class="col-sm-6">
+                        <a href="./ManagerFinishedRepairs.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="***Many Manager actions***"></center>
+                                    <center><img src="#" alt="Finished Repairs"></center>
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="card-title text-success"><center>***Many Manager actions***</center></h4>
+                                    <h4 class="card-title text-success"><center>Finished Repairs</center></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="./ManagerUnfinishedRepairs.php">
+                            <div class="card">
+                                <div class="card-body">
+                                    <center><img src="#" alt="Unfinished Repairs"></center>
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="card-title text-success"><center>Unfinished Repairs</center></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="./ManagerMechanics.php">
+                            <div class="card">
+                                <div class="card-body">
+                                    <center><img src="#" alt="My Mechanics"></center>
+                                </div>
+                                <div class="card-footer">
+                                    <h4 class="card-title text-success"><center>View my mechanics</center></h4>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-sm-4">
-                        <a href="#">
+                        <a href="./ManagerVehicles.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="***Many Manager actions***"></center>
+                                    <center><img src="#" alt="My Vehicles"></center>
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="card-title text-success"><center>***Many Manager actions***</center></h4>
+                                    <h4 class="card-title text-success"><center>Vehicle Database</center></h4>
                                 </div>
                             </div>
                         </a>
                     </div>
-
                     <div class="col-sm-4">
-                        <a href="#">
+                        <a href="./ManagerCustomers.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="***Many Manager actions***"></center>
+                                    <center><img src="#" alt="My Customers"></center>
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="card-title text-success"><center>***Many Manager actions***</center></h4>
+                                    <h4 class="card-title text-success"><center>View my Customers</center></h4>
                                 </div>
                             </div>
                         </a>
@@ -66,7 +94,6 @@ if (isset($_SESSION['loggedin'])) {
 
 
 
-            </div>
         </div>
     
 

@@ -87,20 +87,24 @@ if (isset($_SESSION['loggedin'])) {
                                                     <label for="CustRepairDesc">Description:</label>
                                                     <textarea class="form-control" readonly name="CustRepairDesc" rows = "3">' . $_POST['CustRepairDesc'] . '</textarea>
                                                 </div><br>
+
+
+
                                                 <div class="form-group">
-                                                    <label for="SpareName">Spare Name:</label>';
+                                                    <label for="SpareName">Select Spare</label>
+                                                    <input list="SpareName" name="SpareName" class="list-group-item" placeholder="Select make">
+                                                    <datalist id="SpareName">';
                                                     $result3 = mysqli_query($con, "SELECT * FROM Spares");
-                                                    $res3 = mysqli_fetch_assoc($result3);
                                                     $Counter = 1;
-                                                    while ($Counter <= 10) {
+                                                    while ($Counter <= mysqli_num_rows($result3)) {
+                                                        $res3 = mysqli_fetch_assoc($result3);
                                                         $ppp = $res3['SpareName'];
-                                                        echo $ppp;
+                                                        echo '<option value="' . $ppp . '">';
                                                         $Counter = $Counter + 1;
                                                     }
-
-
-                                                    echo '<input type="text" class="form-control" name="SpareName">
-                                                </div><br>
+                                                    echo '</datalist>
+                                                </div>
+                                                <br>
                                                 <div class="form-group">
                                                     <label for="Quantity">Quantity:</label>
                                                     <input type="number" class="form-control" name="Quantity">

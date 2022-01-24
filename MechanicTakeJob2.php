@@ -33,7 +33,10 @@ if (isset($_SESSION['loggedin'])) {
             $Registration = $_POST['Registration'];
 
             $result = mysqli_query($con, "SELECT * FROM CustRepairDetails WHERE CustJobTaken = 'YES' AND TakenByUserID = '$TakenByUserID' AND CustJobDone = 'NO'");
-
+            $result11 = mysqli_query($con, "SELECT * FROM Spares WHERE SpareName = '$SpareName'");
+            $res11 = mysqli_fetch_assoc($result11);
+            $SpareID = $res11['SpareID'];
+            $SpareCost = $res11['Cost'];
 
 
 
@@ -48,16 +51,16 @@ if (isset($_SESSION['loggedin'])) {
                     date_default_timezone_set("Africa/Nairobi");
                     $Time = date("h:i:sa d-m-y");
 
-                    if (!mysqli_query($con, "UPDATE CustRepairDetails SET CustJobDone='YES', CustJobRepairedWhen='$Time', PaymentStatus='PENDING' WHERE CustRepairID='$CustRepairID'")) {
+                    if (!mysqli_query($con, "UPDATE CustRepairDetails SET CustJobDone='YES', CustJobRepairedWhen='$Time', PaymentStatus='PENDING', SpareID='$SpareID' WHERE CustRepairID='$CustRepairID'")) {
                         echo "Error updating record: " . mysqli_error($con);
                     }
 
                     $result4 = mysqli_query($con, "SELECT * FROM `spares` WHERE `SpareName` = '$SpareName'");
-
+                    $res4 = mysqli_fetch_assoc($result4);
                     $x = $res4['SpareID'];
 
 
-                    $sql1 = mysqli_query($con, "INSERT INTO `sparedetails` (`SpareDetailsID`, `SpareDetailsName`, `SpareTblID`, `UsedWhen`, `UsedBy`)
+                    $sql1 = mysqli_query($con, "INSERT INTO `sparedetails` (`SpareDetailsID`, `SpareDetailsName`, `SpareTblID`, `UsedWhen`, `UsedByCar`)
                                 VALUES (NULL, '$SpareName', '$x', '$Time', '$Registration');");
 
                     

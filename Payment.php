@@ -30,7 +30,7 @@ if (isset($_SESSION['loggedin'])) {
                                 <center><img src="#" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
-                                <h4 class="card-title text-primary"><center>Pay Now</center></h4>
+                                <h4 class="card-title text-primary"><center>Pay Now for Repairs</center></h4>
                             </div>
                         </div>
                     </a>
@@ -43,7 +43,7 @@ if (isset($_SESSION['loggedin'])) {
                                 <center><img src="#" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
-                                <h4 class="card-title text-primary"><center>View Partialy paid</center></h4>
+                                <h4 class="card-title text-primary"><center>Pending Payments for Repairs</center></h4>
                             </div>
                         </div>
                     </a>
@@ -56,7 +56,7 @@ if (isset($_SESSION['loggedin'])) {
                                 <center><img src="#" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
-                                <h4 class="card-title text-primary"><center>View Finished paid</center></h4>
+                                <h4 class="card-title text-primary"><center>Finished Repair Payments</center></h4>
                             </div>
                         </div>
                     </a>

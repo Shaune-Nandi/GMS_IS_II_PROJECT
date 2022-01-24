@@ -16,7 +16,7 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-success bg-light">
-            <a href="./index.php"><img src="Logo.jpg" alt="Logo" height="50px"></a>
+            <a href="#"><img src="Logo.jpg" alt="Logo" height="50px"></a>
 
                 <?php
                     if (isset($_SESSION['loggedin'])) {
@@ -25,10 +25,7 @@
                             echo '
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav">
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./CustomerLanding.php">Main</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./AddVehicle.php">Add Vehicle</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./RepairCar.php">Repair Vehicle</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./Payment.php">Pay</a></li>
+                                    <li class="nav-item text-primary"><a class="nav-link" href="./CustomerLanding.php">Main Menu for Customer</a></li>
                                 </ul>
                             </div>
                             ';  
@@ -36,9 +33,7 @@
                             echo '
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav">
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./Index.php">Mechanic Home</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./Services.php">Mechanic Services</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./About.php">Mechanic About</a></li>
+                                    <li class="nav-item text-primary"><a class="nav-link" href="./MechanicLanding.php">Main Menu for Mechanic</a></li>
                                 </ul>
                             </div>
                             ';  
@@ -46,9 +41,7 @@
                             echo '
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav">
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./Injjjdex.php">Manager Home</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./Services.php">Manager Services</a></li>
-                                    <li class="nav-item text-primary"><a class="nav-link" href="./About.php">Manager About</a></li>
+                                    <li class="nav-item text-primary"><a class="nav-link" href="./ManagerLanding.php">Main Menu for Manager</a></li>
                                 </ul>
                             </div>
                             ';  
@@ -57,9 +50,7 @@
                         echo '
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="nav">
-                                <li class="nav-item text-primary"><a class="nav-link" href="./Index.php">No-one Home</a></li>
-                                <li class="nav-item text-primary"><a class="nav-link" href="./Services.php">No-one Services</a></li>
-                                <li class="nav-item text-primary"><a class="nav-link" href="./About.php">No-one About</a></li>
+                                <li class="nav-item text-primary">Log in to access Navigation Bar</li>
                             </ul>
                         </div>
                         ';           
