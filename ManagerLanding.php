@@ -27,7 +27,7 @@ if (isset($_SESSION['loggedin'])) {
                         <a href="./ManagerFinishedRepairs.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="Finished Repairs"></center>
+                                    <center><img id="Icon1" src="ManagerFinishRepair.png" alt="Finished Repairs"></center>
                                 </div>
                                 <div class="card-footer">
                                     <h4 class="card-title text-success"><center>Finished Repairs</center></h4>
@@ -40,7 +40,7 @@ if (isset($_SESSION['loggedin'])) {
                         <a href="./ManagerUnfinishedRepairs.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="Unfinished Repairs"></center>
+                                    <center><img id="Icon1" src="ManagerUnfinishRepair.png" alt="Unfinished Repairs"></center>
                                 </div>
                                 <div class="card-footer">
                                     <h4 class="card-title text-success"><center>Unfinished Repairs</center></h4>
@@ -57,7 +57,7 @@ if (isset($_SESSION['loggedin'])) {
                         <a href="./ManagerMechanics.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="My Mechanics"></center>
+                                    <center><img id="Icon" src="ManagerMechanics.png" alt="My Mechanics"></center>
                                 </div>
                                 <div class="card-footer">
                                     <h4 class="card-title text-success"><center>View my mechanics</center></h4>
@@ -70,7 +70,7 @@ if (isset($_SESSION['loggedin'])) {
                         <a href="./ManagerVehicles.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="My Vehicles"></center>
+                                    <center><img id="Icon" src="ManagerVehicleDatabase.png" alt="My Vehicles"></center>
                                 </div>
                                 <div class="card-footer">
                                     <h4 class="card-title text-success"><center>Vehicle Database</center></h4>
@@ -82,7 +82,7 @@ if (isset($_SESSION['loggedin'])) {
                         <a href="./ManagerCustomers.php">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="#" alt="My Customers"></center>
+                                    <center><img id="Icon" src="ManagerViewMyCustomers.png" alt="My Customers"></center>
                                 </div>
                                 <div class="card-footer">
                                     <h4 class="card-title text-success"><center>View my Customers</center></h4>
@@ -97,7 +97,24 @@ if (isset($_SESSION['loggedin'])) {
         </div>
     
 
+        <style>
 
+            #Icon {
+                height: 200px;    
+                }
+            #Icon1 {
+                height: 300px;    
+                }
+            .card:hover{
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+                }
+
+            body{
+                background-color: #DDFFE2;
+            }
+
+        </style>
 
 
 

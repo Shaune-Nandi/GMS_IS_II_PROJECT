@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./AddVehicle.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Vehicle"></center>
+                                <center><img id="Icon" src="AddCarIcon.png" alt="Image of Vehicle"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Add my vehicle</center></h4>
@@ -41,7 +41,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./RepairCar.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of repair"></center>
+                                <center><img id="Icon" src="RepairCar.png" alt="Image of repair"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Repair my car</center></h4>
@@ -54,7 +54,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./Payment.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of payment"></center>
+                                <center><img id="Icon" src="Money.png" alt="Image of payment"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Payment</center></h4>
@@ -73,7 +73,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./CustomerPendingRepairs.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Finished Repair"></center>
+                                <center><img id="Icon1" src="PendingRepair.png" alt="Image of Finished Repair"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>View pending Repairs</center></h4>
@@ -87,7 +87,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./CustomerFinishedRepairs.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Vehicle"></center>
+                                <center><img id="Icon1" src="FinishedRepair.png" alt="Image of Vehicle"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>View Finished Repairs</center></h4>
@@ -100,7 +100,22 @@ if (isset($_SESSION['loggedin'])) {
         </div>
     
 
+        <style>
 
+            #Icon {
+                height: 200px;    
+                }
+
+            #Icon1 {
+                height: 300px;    
+                }
+
+            .card:hover{
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+                }
+
+        </style>
 
         <!-- Optional JavaScript; choose one of the two! -->
 

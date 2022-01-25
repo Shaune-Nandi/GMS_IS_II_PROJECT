@@ -27,7 +27,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./PayNow.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Payment"></center>
+                                <center><img id="Icon" src="PayNow.png" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Pay Now for Repairs</center></h4>
@@ -40,7 +40,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./PendingPayment.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Payment"></center>
+                                <center><img id="Icon" src="PendingPayment.png" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Pending Payments for Repairs</center></h4>
@@ -53,7 +53,7 @@ if (isset($_SESSION['loggedin'])) {
                     <a href="./FinishedPayment.php" style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <center><img src="#" alt="Image of Payment"></center>
+                                <center><img id="Icon" src="FinishedPayment.png" alt="Image of Payment"></center>
                             </div>
                             <div class="card-footer">
                                 <h4 class="card-title text-primary"><center>Finished Repair Payments</center></h4>
@@ -66,7 +66,18 @@ if (isset($_SESSION['loggedin'])) {
         </div>
 
     
+        <style>
 
+        #Icon {
+            height: 200px;    
+            }
+
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+
+        </style>
 
 
 
