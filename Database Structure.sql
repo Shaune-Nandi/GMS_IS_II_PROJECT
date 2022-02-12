@@ -1,6 +1,6 @@
 --Database Name: GMSdb
 
-/*********FOR DEMONSTRATION ONLY**********
+/*********DEMO ONLY**********
 
 	INSERT INTO `users`(`Role`, `FirstName`, `LastName`, `UserName`, `Password`, `Email`, `Phone`, `DateJoined`)
 	VALUES ('Manager','Shaune','Nandi','SMN','12345','shaunenandi27@gmail.com','+254740948031','30/11/2021');
